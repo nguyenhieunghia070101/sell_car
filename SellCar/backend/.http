@@ -1,0 +1,58 @@
+GET http://localhost:3000/api/users HTTP/1.1
+###
+GET http://localhost:3000/api/users?name=Khanh HTTP/1.1
+###
+GET http://localhost:3000/api/users HTTP/1.1
+content-type: application/json
+
+{
+    "user_id": 1,
+    "user_name": "Nguyen Thi My Khanh",
+    "user_email": "khanhb1910657@student.ctu.edu.vn",
+    "user_phone": "0976038762",
+    "user_password": "123456",
+    "user_birth": "01-01-2001",
+    "user_gender": "female"
+}
+
+###
+POST http://localhost:3000/api/users HTTP/1.1
+content-type: application/json
+
+{
+    "user_id": 5,
+    "user_name": "Nguyen Hieu Nghia",
+    "user_email": "nghia0976038762",
+    "user_password": "123456",
+    "user_birth": "01-01-2001",
+    "user_gender": "male"
+}
+###
+POST http://localhost:3000/api/admins HTTP/1.1
+content-type: application/json
+
+{
+    "admin_id": 2,
+    "admin_name": "Nguyen Hieu Nghia",
+    "admin_email": "nghia@gmail.com",
+    "admin_password": "123456",
+    "admin-phone": ""
+}
+
+
+###
+GET http://localhost:3000/api/books/khanh@gmail.com HTTP/1.1
+###
+GET http://localhost:3000/api/books HTTP/1.1
+###
+POST http://localhost:3000/api/books HTTP/1.1
+content-type: application/json
+
+{
+    "book_id": "4",
+    "user_email": "2conga",
+    "car_id": "1",
+    "itemcar_quantity": "2",
+    "cus_name": "2conga",
+    "cus_phone": "098745368"
+}
